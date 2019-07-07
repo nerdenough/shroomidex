@@ -2,20 +2,84 @@ import React from 'react'
 import Header from './components/Header'
 import SearchForm from './components/SearchForm'
 import Footer from './components/Footer'
+import * as tf from '@tensorflow/tfjs'
+import { loadFrozenModel } from '@tensorflow/tfjs-converter'
+import labels from './labels.json'
 import './App.css'
 
-const onFileChange = event => {
-  console.log(event.target.files)
+const MODEL_URL = 'http://localhost:3000/model/tensorflowjs_model.pb'
+const WEIGHTS_URL = 'http://localhost:3000/model/weights_manifest.json'
+const IMAGE_SIZE = 224
+
+const loadModel = async () => {
+  const model = await loadFrozenModel(MODEL_URL, WEIGHTS_URL)
+  const input = tf.zeros([1, IMAGE_SIZE, IMAGE_SIZE, 3])
+  model.predict({ Placeholder: input }) // MobileNet V2
+  return model
 }
 
-const App = () => {
-  return (
-    <div className="App">
-      <Header />
-      <SearchForm onFileChange={onFileChange} />
-      <Footer />
-    </div>
-  )
+const predict = async (img, model) => {
+  const t0 = performance.now()
+  const image = tf.fromPixels(img).toFloat()
+  const resized = tf.image.resizeBilinear(image, [IMAGE_SIZE, IMAGE_SIZE])
+  const offset = tf.scalar(255 / 2)
+  const normalized = resized.sub(offset).div(offset)
+  const input = normalized.expandDims(0)
+  const output = await tf
+    .tidy(() => model.predict({ Placeholder: input }))
+    .data() // MobileNet V2
+  const predictions = labels
+    .map((label, index) => ({ label, accuracy: output[index] }))
+    .sort((a, b) => b.accuracy - a.accuracy)
+  const time = `${(performance.now() - t0).toFixed(1)} ms`
+  return { predictions, time }
+}
+
+const getImage = file => {
+  return new Promise(resolve => {
+    const reader = new FileReader()
+    reader.onloadend = () => resolve(reader.result)
+    reader.readAsDataURL(file)
+  })
+}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { predictions: null }
+    this.onFileChange = this.onFileChange.bind(this)
+  }
+
+  async onFileChange(event) {
+    const file = event.target.files[0]
+    const img = document.getElementById('preview')
+    const image = await getImage(file)
+    img.setAttribute('src', image)
+
+    const model = await loadModel()
+    const { predictions, time } = await predict(img, model)
+    console.log(time)
+    this.setState({ predictions })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <div style={{ textAlign: 'center' }}>
+          <SearchForm onFileChange={this.onFileChange} />
+          <img
+            id="preview"
+            src="./shroom.png"
+            alt="preview"
+            style={{ width: 200 }}
+          />
+          {this.state.predictions && <h1>{this.state.predictions[0].label}</h1>}
+        </div>
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default App
