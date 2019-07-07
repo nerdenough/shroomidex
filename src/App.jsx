@@ -51,6 +51,10 @@ class App extends React.Component {
   }
 
   async onFileChange(event) {
+    if (!event.target.files.length) {
+      return
+    }
+
     const file = event.target.files[0]
     const img = document.getElementById('preview')
     const image = await getImage(file)
