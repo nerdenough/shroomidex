@@ -1,6 +1,7 @@
 .Header {
-  background: rgb(35, 35, 48);
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header-logo {

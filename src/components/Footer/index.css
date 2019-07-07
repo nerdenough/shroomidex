@@ -1,0 +1,11 @@
+.Footer {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-mushroom {
+  height: 1.8rem;
+}
