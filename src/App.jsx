@@ -7,8 +7,8 @@ import { loadFrozenModel } from '@tensorflow/tfjs-converter'
 import labels from './labels.json'
 import './App.css'
 
-const MODEL_URL = 'http://localhost:3000/model/tensorflowjs_model.pb'
-const WEIGHTS_URL = 'http://localhost:3000/model/weights_manifest.json'
+const MODEL_URL = '/model/tensorflowjs_model.pb'
+const WEIGHTS_URL = '/model/weights_manifest.json'
 const IMAGE_SIZE = 224
 
 const loadModel = async () => {
