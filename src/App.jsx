@@ -1,13 +1,18 @@
 import React from 'react'
 import Header from './components/Header'
+import SearchForm from './components/SearchForm'
 import Footer from './components/Footer'
 import './App.css'
 
-function App() {
+const onFileChange = event => {
+  console.log(event.target.files)
+}
+
+const App = () => {
   return (
     <div className="App">
       <Header />
-      <main />
+      <SearchForm onFileChange={onFileChange} />
       <Footer />
     </div>
   )

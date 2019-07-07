@@ -1,0 +1,30 @@
+.SearchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchForm-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.SearchForm-label {
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  background-color: #63b477;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #11111d;
+}
+
+.SearchForm-label:hover {
+  background-color: #539463;
+}
