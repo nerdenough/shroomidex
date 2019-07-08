@@ -26,8 +26,19 @@
 }
 
 .Suggestion-edibility {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.Suggestion-edibility-icon {
+  color: #7142e7;
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
 }
 
 .Suggestion-photo {

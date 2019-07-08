@@ -1,7 +1,22 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faHamburger,
+  faSkullCrossbones,
+  faHatWizard,
+} from '@fortawesome/free-solid-svg-icons'
 import './index.css'
 
+const edibilityIcon = {
+  edible: faHamburger,
+  deadly: faSkullCrossbones,
+  psychoactive: faHatWizard,
+  unknown: null,
+  unpalatable: null,
+}
+
 const Suggestion = ({ mushroom }) => {
+  const { edibility } = mushroom.properties
   return (
     <div className="Suggestion">
       <h2 className="Suggestion-name">{mushroom.name}</h2>
@@ -15,7 +30,11 @@ const Suggestion = ({ mushroom }) => {
         alt={mushroom.name}
       />
       <p className="Suggestion-edibility">
-        Edibility: {mushroom.properties.edibility}
+        Edibility: {edibility}
+        <FontAwesomeIcon
+          className="Suggestion-edibility-icon"
+          icon={edibilityIcon[edibility]}
+        />
       </p>
     </div>
   )
