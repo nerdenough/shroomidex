@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
+import Disclaimer from './components/Disclaimer'
 import SearchForm from './components/SearchForm'
 import Footer from './components/Footer'
 import * as tf from '@tensorflow/tfjs'
@@ -71,12 +72,13 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div style={{ textAlign: 'center' }}>
+          <Disclaimer />
           <SearchForm onFileChange={this.onFileChange} />
           <img
             id="preview"
             src="./shroom.png"
             alt="preview"
-            style={{ width: 200 }}
+            style={{ display: 'none' }}
           />
           {this.state.predictions && <h1>{this.state.predictions[0].label}</h1>}
         </div>

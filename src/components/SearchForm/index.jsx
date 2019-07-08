@@ -1,11 +1,14 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import './index.css'
 
 const SearchForm = ({ onFileChange }) => {
   return (
     <div className="SearchForm">
       <label className="SearchForm-label">
-        Add Photo
+        <FontAwesomeIcon icon={faCamera} />
+        &nbsp;Photo Search
         <input
           onChange={onFileChange}
           className="SearchForm-input"

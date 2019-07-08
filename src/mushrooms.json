@@ -1,0 +1,11 @@
+{
+  "amanita muscaria": {
+    "name": "Amanita Muscaria",
+    "nickname": "Fly Agaric",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/2006-10-25_Amanita_muscaria_crop.jpg/800px-2006-10-25_Amanita_muscaria_crop.jpg",
+    "properties": {
+      "cap": ["flat", "convex"],
+      "edibility": "psychoactive"
+    }
+  }
+}

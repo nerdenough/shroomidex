@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .SearchForm-input {
@@ -16,13 +17,12 @@
 
 .SearchForm-label {
   cursor: pointer;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: white;
   background-color: #63b477;
-  padding: 3rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem #11111d;
+  padding: 1rem;
+  border-radius: 0.2rem;
 }
 
 .SearchForm-label:hover {
