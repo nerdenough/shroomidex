@@ -7,6 +7,14 @@
       "edibility": "edible"
     }
   },
+  "aleuria aurantia": {
+    "name": "Aleuria Aurantia",
+    "nickname": "Orange Peel Fungus",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Aleuria_aurantia_1.jpg/1920px-Aleuria_aurantia_1.jpg",
+    "properties": {
+      "edibility": "edible"
+    }
+  },
   "amanita muscaria": {
     "name": "Amanita Muscaria",
     "nickname": "Fly Agaric",
@@ -31,12 +39,28 @@
       "edibility": "unknown"
     }
   },
+  "favolaschia calocera": {
+    "name": "Favolaschia Calocera",
+    "nickname": "Orange Pore Fungus",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Favolaschia_calocera_38204.jpg/1024px-Favolaschia_calocera_38204.jpg",
+    "properties": {
+      "edibility": "unknown"
+    }
+  },
   "galerina patagonica": {
     "name": "Galerina Patagonica",
     "nickname": "Galerina Patagonica",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/6/61/Galerina_patagonica_5927.jpg",
     "properties": {
       "edibility": "deadly"
+    }
+  },
+  "hygrocybe blanda": {
+    "name": "Hygrocybe Blanda",
+    "nickname": "Hygrocybe Blanda",
+    "photo": "http://hiddenforest.co.nz/fungi/family/hygrophoraceae/images/hygro15a.jpg",
+    "properties": {
+      "edibility": "unknown"
     }
   },
   "mycena helminthobasis var novaezelandiae": {
@@ -71,10 +95,42 @@
       "edibility": "psychoactive"
     }
   },
+  "psilocybe cubensis": {
+    "name": "Psilocybe Cubensis",
+    "nickname": "Gold Caps",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cubensis.natural.habitat-2.jpg/1920px-Cubensis.natural.habitat-2.jpg",
+    "properties": {
+      "edibility": "psychoactive"
+    }
+  },
+  "psilocybe cyanescens": {
+    "name": "Psilocybe Cyanescens",
+    "nickname": "Wavy Caps",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/2012-12-05_Psilocybe_cyanescens_Wakef_290262.jpg/1920px-2012-12-05_Psilocybe_cyanescens_Wakef_290262.jpg",
+    "properties": {
+      "edibility": "psychoactive"
+    }
+  },
+  "psilocybe mexicana": {
+    "name": "Psilocybe Mexicana",
+    "nickname": "Psilocybe Mexicana",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Psilocybe_mexicana_Veracruz.jpg/1920px-Psilocybe_mexicana_Veracruz.jpg",
+    "properties": {
+      "edibility": "psychoactive"
+    }
+  },
   "psilocybe semilanceata": {
     "name": "Psilocybe Semilanceata",
     "nickname": "Liberty Cap",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Psilocybe.semilanceata.Alan.jpg/1024px-Psilocybe.semilanceata.Alan.jpg",
+    "properties": {
+      "edibility": "psychoactive"
+    }
+  },
+  "psilocybe weraroa": {
+    "name": "Psilocybe Weraroa",
+    "nickname": "Weraroa Novae-Zelandiae",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Weraroa_novae_zelandiae.jpg",
     "properties": {
       "edibility": "psychoactive"
     }
