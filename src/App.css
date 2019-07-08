@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-rows: 7rem 1fr 5rem;
+  grid-template-rows: auto 1fr auto;
   width: 100vw;
   min-height: 100vh;
 }

@@ -1,9 +1,24 @@
 .Footer {
   display: flex;
+  flex-direction: column;
   font-size: 1.4rem;
   font-weight: bold;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.Footer-disclaimer {
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+.Footer-author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .Footer-mushroom {
