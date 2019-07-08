@@ -1,10 +1,12 @@
 import React from 'react'
 import Header from './components/Header'
 import SearchForm from './components/SearchForm'
+import SuggestionList from './components/SuggestionList'
 import Footer from './components/Footer'
 import * as tf from '@tensorflow/tfjs'
 import { loadFrozenModel } from '@tensorflow/tfjs-converter'
 import labels from './labels.json'
+import mushrooms from './mushrooms.json'
 import './App.css'
 
 const MODEL_URL = '/model/tensorflowjs_model.pb'
@@ -46,7 +48,7 @@ const getImage = file => {
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { predictions: null }
+    this.state = { predictions: [] }
     this.onFileChange = this.onFileChange.bind(this)
   }
 
@@ -67,6 +69,12 @@ class App extends React.Component {
   }
 
   render() {
+    const { predictions } = this.state
+    const suggestions = predictions.slice(0, 5).map(({ label, accuracy }) => ({
+      ...mushrooms[label],
+      accuracy,
+    }))
+
     return (
       <div className="App">
         <Header />
@@ -76,9 +84,9 @@ class App extends React.Component {
             id="preview"
             src="./shroom.png"
             alt="preview"
-            style={{ display: 'none' }}
+            style={{ display: 'none', maxWidth: '20rem' }}
           />
-          {this.state.predictions && <h1>{this.state.predictions[0].label}</h1>}
+          <SuggestionList suggestions={suggestions} />
         </div>
         <Footer />
       </div>

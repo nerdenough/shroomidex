@@ -1,0 +1,9 @@
+.SuggestionList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0 2rem;
+}
