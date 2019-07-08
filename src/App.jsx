@@ -84,7 +84,8 @@ class App extends React.Component {
             id="preview"
             src="./shroom.png"
             alt="preview"
-            style={{ display: 'none', maxWidth: '20rem' }}
+            width="600"
+            style={{ display: 'none' }}
           />
           <SuggestionList suggestions={suggestions} />
         </div>
