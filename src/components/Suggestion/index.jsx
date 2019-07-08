@@ -11,8 +11,12 @@ const edibilityIcon = {
   edible: faHamburger,
   deadly: faSkullCrossbones,
   psychoactive: faHatWizard,
-  unknown: null,
-  unpalatable: null,
+}
+
+const edibilityColor = {
+  edible: '#e2bf44',
+  deadly: '#da6141',
+  psychoactive: '#7142e7',
 }
 
 const Suggestion = ({ mushroom }) => {
@@ -31,10 +35,13 @@ const Suggestion = ({ mushroom }) => {
       />
       <p className="Suggestion-edibility">
         Edibility: {edibility}
-        <FontAwesomeIcon
-          className="Suggestion-edibility-icon"
-          icon={edibilityIcon[edibility]}
-        />
+        {edibilityIcon[edibility] ? (
+          <FontAwesomeIcon
+            className="Suggestion-edibility-icon"
+            icon={edibilityIcon[edibility]}
+            style={{ color: edibilityColor[edibility] }}
+          />
+        ) : null}
       </p>
     </div>
   )
