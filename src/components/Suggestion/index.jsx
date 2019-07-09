@@ -21,24 +21,24 @@ const Suggestion = ({ mushroom }) => {
         className="Suggestion-photo"
         style={{ backgroundImage: `url(${mushroom.photo})` }}
       />
-      <div className="Suggestion-header">
+      <div className="Suggestion-details">
         <h2 className="Suggestion-name">{mushroom.name}</h2>
         <h3 className="Suggestion-nickname">{mushroom.nickname}</h3>
         <p className="Suggestion-accuracy">
           {Number.parseFloat(mushroom.accuracy * 100).toFixed(1)}% match
         </p>
+        {edibility !== 'unknown' && (
+          <p className="Suggestion-edibility">
+            {edibility}
+            {edibilityIcon[edibility] ? (
+              <FontAwesomeIcon
+                className="Suggestion-edibility-icon"
+                icon={edibilityIcon[edibility]}
+              />
+            ) : null}
+          </p>
+        )}
       </div>
-      {/* {edibility !== 'unknown' && (
-        <p className="Suggestion-edibility">
-          {edibility}
-          {edibilityIcon[edibility] ? (
-            <FontAwesomeIcon
-              className="Suggestion-edibility-icon"
-              icon={edibilityIcon[edibility]}
-            />
-          ) : null}
-        </p>
-      )} */}
     </li>
   )
 }
