@@ -44,6 +44,16 @@
       "edibility": "deadly"
     }
   },
+  "auricularia cornea": {
+    "name": "Auricularia Cornea",
+    "nickname": "Wood-ear Fungi",
+    "photo": "http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/9369/Wood_ear_fungi__Auricularia_cornea-12.JPG",
+    "properties": {
+      "cap": "indistinct",
+      "sporePrint": "unknown",
+      "edibility": "unknown"
+    }
+  },
   "entoloma hochstetteri": {
     "name": "Entoloma Hochstetteri",
     "nickname": "Werewere-kokako",
