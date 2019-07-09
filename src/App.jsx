@@ -70,7 +70,7 @@ class App extends React.Component {
 
   render() {
     const { predictions } = this.state
-    const suggestions = predictions.slice(0, 5).map(({ label, accuracy }) => ({
+    const suggestions = predictions.slice(0, 7).map(({ label, accuracy }) => ({
       ...mushrooms[label],
       accuracy,
     }))

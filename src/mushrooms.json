@@ -55,12 +55,28 @@
       "edibility": "deadly"
     }
   },
+  "hydnellum peckii": {
+    "name": "Hydnellum Peckii",
+    "nickname": "Bleeding Tooth Fungus",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hydnellum_peckii2.jpg",
+    "properties": {
+      "edibility": "inedible"
+    }
+  },
   "hygrocybe blanda": {
     "name": "Hygrocybe Blanda",
     "nickname": "Hygrocybe Blanda",
     "photo": "http://hiddenforest.co.nz/fungi/family/hygrophoraceae/images/hygro15a.jpg",
     "properties": {
       "edibility": "unknown"
+    }
+  },
+  "morchella": {
+    "name": "Morchella",
+    "nickname": "True Morels",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Morchella_conica_1_beentree.jpg/1024px-Morchella_conica_1_beentree.jpg",
+    "properties": {
+      "edibility": "edible"
     }
   },
   "mycena helminthobasis var novaezelandiae": {
@@ -122,7 +138,7 @@
   "psilocybe semilanceata": {
     "name": "Psilocybe Semilanceata",
     "nickname": "Liberty Cap",
-    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Psilocybe.semilanceata.Alan.jpg/1024px-Psilocybe.semilanceata.Alan.jpg",
+    "photo": "https://www.first-nature.com/fungi/images/strophariaceae/psilocybe-semilanceata7.jpg",
     "properties": {
       "edibility": "psychoactive"
     }
@@ -135,12 +151,20 @@
       "edibility": "psychoactive"
     }
   },
+  "suillus luteus": {
+    "name": "Suillus Luteus",
+    "nickname": "Slippery Jack",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Suillus_luteus_475376.jpg/1920px-Suillus_luteus_475376.jpg",
+    "properties": {
+      "edibility": "edible"
+    }
+  },
   "trametes versicolor": {
     "name": "Trametes Versicolor",
     "nickname": "Turkey Tail",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Trametes_versicolor_G4_%281%29.JPG/799px-Trametes_versicolor_G4_%281%29.JPG",
     "properties": {
-      "edibility": "unpalatable"
+      "edibility": "inedible"
     }
   },
   "weraroa erythrocephala": {

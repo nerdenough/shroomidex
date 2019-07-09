@@ -13,37 +13,33 @@ const edibilityIcon = {
   psychoactive: faHatWizard,
 }
 
-const edibilityColor = {
-  edible: '#e2bf44',
-  deadly: '#da6141',
-  psychoactive: '#7142e7',
-}
-
 const Suggestion = ({ mushroom }) => {
   const { edibility } = mushroom.properties
   return (
-    <div className="Suggestion">
-      <h2 className="Suggestion-name">{mushroom.name}</h2>
-      <h3 className="Suggestion-nickname">{mushroom.nickname}</h3>
-      <p className="Suggestion-accuracy">
-        {Number.parseFloat(mushroom.accuracy * 100).toFixed(2)}% match!
-      </p>
-      <img
+    <li className="Suggestion">
+      <div
         className="Suggestion-photo"
-        src={mushroom.photo}
-        alt={mushroom.name}
+        style={{ backgroundImage: `url(${mushroom.photo})` }}
       />
-      <p className="Suggestion-edibility">
-        Edibility: {edibility}
-        {edibilityIcon[edibility] ? (
-          <FontAwesomeIcon
-            className="Suggestion-edibility-icon"
-            icon={edibilityIcon[edibility]}
-            style={{ color: edibilityColor[edibility] }}
-          />
-        ) : null}
-      </p>
-    </div>
+      <div className="Suggestion-header">
+        <h2 className="Suggestion-name">{mushroom.name}</h2>
+        <h3 className="Suggestion-nickname">{mushroom.nickname}</h3>
+        <p className="Suggestion-accuracy">
+          {Number.parseFloat(mushroom.accuracy * 100).toFixed(1)}% match
+        </p>
+      </div>
+      {/* {edibility !== 'unknown' && (
+        <p className="Suggestion-edibility">
+          {edibility}
+          {edibilityIcon[edibility] ? (
+            <FontAwesomeIcon
+              className="Suggestion-edibility-icon"
+              icon={edibilityIcon[edibility]}
+            />
+          ) : null}
+        </p>
+      )} */}
+    </li>
   )
 }
 
