@@ -1,20 +1,8 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faHamburger,
-  faSkullCrossbones,
-  faHatWizard,
-} from '@fortawesome/free-solid-svg-icons'
+import DetailsTable from '../DetailsTable'
 import './index.css'
 
-const edibilityIcon = {
-  edible: faHamburger,
-  deadly: faSkullCrossbones,
-  psychoactive: faHatWizard,
-}
-
 const Suggestion = ({ mushroom }) => {
-  const { edibility } = mushroom.properties
   return (
     <li className="Suggestion">
       <div
@@ -27,18 +15,8 @@ const Suggestion = ({ mushroom }) => {
         <p className="Suggestion-accuracy">
           {Number.parseFloat(mushroom.accuracy * 100).toFixed(1)}% match
         </p>
-        {edibility !== 'unknown' && (
-          <p className="Suggestion-edibility">
-            {edibility}
-            {edibilityIcon[edibility] ? (
-              <FontAwesomeIcon
-                className="Suggestion-edibility-icon"
-                icon={edibilityIcon[edibility]}
-              />
-            ) : null}
-          </p>
-        )}
       </div>
+      <DetailsTable mushroomProperties={mushroom.properties} />
     </li>
   )
 }

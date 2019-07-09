@@ -60,22 +60,6 @@
 
 .Suggestion-accuracy {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.8rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
-}
-
-.Suggestion-edibility {
-  display: flex;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: bold;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
-.Suggestion-edibility-icon {
-  font-size: 1.8rem;
-  margin-left: 0.5rem;
 }

@@ -4,6 +4,10 @@
     "nickname": "Common Mushroom",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/0/01/ChampignonMushroom.jpg",
     "properties": {
+      "cap": "convex",
+      "hymenium": "gills",
+      "stipe": "ring",
+      "sporePrint": "brown",
       "edibility": "edible"
     }
   },
@@ -12,6 +16,7 @@
     "nickname": "Orange Peel Fungus",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Aleuria_aurantia_1.jpg/1920px-Aleuria_aurantia_1.jpg",
     "properties": {
+      "sporePrint": "white",
       "edibility": "edible"
     }
   },
@@ -20,6 +25,10 @@
     "nickname": "Fly Agaric",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/2006-10-25_Amanita_muscaria_crop.jpg/800px-2006-10-25_Amanita_muscaria_crop.jpg",
     "properties": {
+      "cap": "flat, convex",
+      "hymenium": "gills",
+      "stipe": "ring, volva",
+      "sporePrint": "white",
       "edibility": "psychoactive"
     }
   },
@@ -28,6 +37,10 @@
     "nickname": "Death Cap",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Amanita_phalloides_1.JPG/1024px-Amanita_phalloides_1.JPG",
     "properties": {
+      "cap": "flat, convex",
+      "hymenium": "gills",
+      "stipe": "ring, volva",
+      "sporePrint": "white",
       "edibility": "deadly"
     }
   },
@@ -36,6 +49,10 @@
     "nickname": "Werewere-kokako",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Blue_mushroom.jpg",
     "properties": {
+      "cap": "convex",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "pink",
       "edibility": "unknown"
     }
   },
@@ -44,6 +61,8 @@
     "nickname": "Orange Pore Fungus",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Favolaschia_calocera_38204.jpg/1024px-Favolaschia_calocera_38204.jpg",
     "properties": {
+      "hymenium": "pores",
+      "sporePrint": "white",
       "edibility": "unknown"
     }
   },
@@ -52,6 +71,10 @@
     "nickname": "Galerina Patagonica",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/6/61/Galerina_patagonica_5927.jpg",
     "properties": {
+      "cap": "convex",
+      "hymenium": "gills",
+      "stipe": "ring, bare",
+      "sporePrint": "orange, brown",
       "edibility": "deadly"
     }
   },
@@ -60,6 +83,10 @@
     "nickname": "Bleeding Tooth Fungus",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hydnellum_peckii2.jpg",
     "properties": {
+      "cap": "funnel",
+      "hymenium": "teeth",
+      "stipe": "unknown",
+      "sporePrint": "white",
       "edibility": "inedible"
     }
   },
@@ -76,6 +103,10 @@
     "nickname": "True Morels",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Morchella_conica_1_beentree.jpg/1024px-Morchella_conica_1_beentree.jpg",
     "properties": {
+      "cap": "conical, ovate",
+      "hymenium": "smooth",
+      "stipe": "bare",
+      "sporePrint": "cream, yellow",
       "edibility": "edible"
     }
   },
@@ -84,6 +115,10 @@
     "nickname": "Mycena Helminthobasis var. Novaezelandiae",
     "photo": "http://www.terrain.net.nz/uploads/images/Te%20Henui/Fungi/Mycena%20helminthobasis%20var.%20novaezelandiae-002.jpg",
     "properties": {
+      "cap": "conical",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "white",
       "edibility": "unknown"
     }
   },
@@ -92,6 +127,10 @@
     "nickname": "Pixie's Parasol",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mycena_interrupta.jpg/1920px-Mycena_interrupta.jpg",
     "properties": {
+      "cap": "conical",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "white",
       "edibility": "unknown"
     }
   },
@@ -100,6 +139,10 @@
     "nickname": "Psathyrella Asperospora",
     "photo": "https://i.redd.it/unur5ilah3t21.jpg",
     "properties": {
+      "cap": "convex, flat",
+      "hymenium": "gills",
+      "stipe": "unknown",
+      "sporePrint": "blackish-brown",
       "edibility": "unknown"
     }
   },
@@ -108,6 +151,10 @@
     "nickname": "Psilocybe Azurescens",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/1/18/Psilocybe_azurescens_123020.jpg",
     "properties": {
+      "cap": "convex, umbonate",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "blackish-brown, purple",
       "edibility": "psychoactive"
     }
   },
@@ -116,6 +163,10 @@
     "nickname": "Gold Caps",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cubensis.natural.habitat-2.jpg/1920px-Cubensis.natural.habitat-2.jpg",
     "properties": {
+      "cap": "convex. flat",
+      "hymenium": "gills",
+      "stipe": "ring",
+      "sporePrint": "purple",
       "edibility": "psychoactive"
     }
   },
@@ -124,6 +175,10 @@
     "nickname": "Wavy Caps",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/2012-12-05_Psilocybe_cyanescens_Wakef_290262.jpg/1920px-2012-12-05_Psilocybe_cyanescens_Wakef_290262.jpg",
     "properties": {
+      "cap": "flat",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "blackish-brown, purple",
       "edibility": "psychoactive"
     }
   },
@@ -132,6 +187,10 @@
     "nickname": "Psilocybe Mexicana",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Psilocybe_mexicana_Veracruz.jpg/1920px-Psilocybe_mexicana_Veracruz.jpg",
     "properties": {
+      "cap": "conical, umbonate",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "purple-brown",
       "edibility": "psychoactive"
     }
   },
@@ -140,6 +199,10 @@
     "nickname": "Liberty Cap",
     "photo": "https://www.first-nature.com/fungi/images/strophariaceae/psilocybe-semilanceata7.jpg",
     "properties": {
+      "cap": "conical, umbonate",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "brown, purple",
       "edibility": "psychoactive"
     }
   },
@@ -148,6 +211,10 @@
     "nickname": "Weraroa Novae-Zelandiae",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Weraroa_novae_zelandiae.jpg",
     "properties": {
+      "cap": "conical, ovate",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "purple-brown",
       "edibility": "psychoactive"
     }
   },
@@ -156,6 +223,10 @@
     "nickname": "Slippery Jack",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Suillus_luteus_475376.jpg/1920px-Suillus_luteus_475376.jpg",
     "properties": {
+      "cap": "convex",
+      "hymenium": "pores",
+      "stipe": "ring",
+      "sporePrint": "brown",
       "edibility": "edible"
     }
   },
@@ -164,6 +235,9 @@
     "nickname": "Turkey Tail",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Trametes_versicolor_G4_%281%29.JPG/799px-Trametes_versicolor_G4_%281%29.JPG",
     "properties": {
+      "cap": "offset, indistinct",
+      "hymenium": "pores",
+      "sporePrint": "white, yellow",
       "edibility": "inedible"
     }
   },
@@ -172,6 +246,10 @@
     "nickname": "Scarlet Pouch",
     "photo": "http://ketenewplymouth.peoplesnetworknz.info/image_files/0000/0001/7754/Scarlet_pouch__Weraroa_erythrocephala-10.JPG",
     "properties": {
+      "cap": "conical, ovate",
+      "hymenium": "gills",
+      "stipe": "bare",
+      "sporePrint": "unknown",
       "edibility": "unknown"
     }
   }

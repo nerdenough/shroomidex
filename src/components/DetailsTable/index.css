@@ -1,0 +1,35 @@
+.DetailsTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.DetailsTable-row {
+  display: flex;
+  flex-grow: 1;
+}
+
+.DetailsTable-row:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.DetailsTable-column {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+.DetailsTable-column:first-child {
+  font-style: oblique;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.DetailsTable-column:last-child {
+  text-align: right;
+  border-right: none;
+}
+
+.Suggestion-edibility-icon {
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+}
